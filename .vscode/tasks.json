@@ -1,0 +1,65 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install dependencies",
+      "command": "./build.ps1 -install",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "generate docs",
+      "command": ".venv/Scripts/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "autobuild docs",
+      "command": ".venv/Scripts/poetry run sphinx-autobuild -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "open docs index.html",
+      "command": "${workspaceFolder}/build/docs/index.html",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "run pre-commit checks",
+      "command": ".venv/Scripts/poetry run pre-commit run --all-files",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}

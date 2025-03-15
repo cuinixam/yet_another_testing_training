@@ -1,0 +1,11 @@
+pipeline:
+  - step: CreateVEnv
+    module: pypeline.steps.create_venv
+    config:
+      bootstrap_script: .bootstrap/bootstrap.py
+  - step: LintAndFormat
+    "run": ["pre-commit", "run", "--all-files"]
+  - step: RunPytest
+    run: ["pytest"]
+  - step: GenerateDocs
+    "run": ["sphinx-build", "-E", "-a", "docs", "build/docs"]

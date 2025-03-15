@@ -1,0 +1,100 @@
+[tool.poetry]
+name = "jarvis"
+version = "0.0.0"
+description = "Yet another testing attempt."
+authors = ["Alexandru Maxiniuc <me@maxiniuc.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+py-app-dev = ">=2.0"
+typer = ">=0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+pytest-cov = ">=6.0"
+pre-commit = ">=4.0"
+ruff = ">=0"
+pypeline-runner = ">=1.0"
+
+[tool.poetry.group.docs.dependencies]
+myst-parser = ">=4.0"
+sphinx = ">8.0"
+sphinxcontrib-mermaid = ">=1.0"
+sphinx-copybutton = ">=0"
+sphinx-new-tab-link = ">=0"
+sphinx-design = ">=0"
+sphinx-autobuild = ">=2024.1"
+pydata-sphinx-theme = ">=0"
+
+
+[tool.pytest.ini_options]
+addopts = "-v -Wdefault --cov=jarvis --cov-report=term-missing:skip-covered"
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 180
+lint.ignore = [
+    "D203", # 1 blank line required before class docstring
+    "D212", # Multi-line docstring summary should start at the first line
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package
+    "D107", # Missing docstring in `__init__`
+    "D401", # First line of docstring should be in imperative mood
+]
+lint.select = [
+    "B",   # flake8-bugbear
+    "D",   # flake8-docstrings
+    "C4",  # flake8-comprehensions
+    "S",   # flake8-bandit
+    "F",   # pyflake
+    "E",   # pycodestyle
+    "W",   # pycodestyle
+    "UP",  # pyupgrade
+    "I",   # isort
+    "RUF", # ruff specific
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "S101",
+]
+"docs/conf.py" = ["D100"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["jarvis", "tests"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+mypy_path = "src/"
+no_implicit_optional = true
+show_error_codes = true
+warn_unreachable = true
+warn_unused_ignores = true
+exclude = [
+    'docs/.*',
+    'setup.py',
+]
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+allow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "docs.*"
+ignore_errors = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
