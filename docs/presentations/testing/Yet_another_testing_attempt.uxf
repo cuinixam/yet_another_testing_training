@@ -547,7 +547,7 @@ environment:
     <panel_attributes>*Process analysis*
 
 Isolate the process from the environment by
-identifing the boudaries and the behaviour.
+identifying the boundaries and the behaviour.
 
 Define the inputs, the outputs and how to
 trigger the process.</panel_attributes>

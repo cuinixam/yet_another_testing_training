@@ -6,41 +6,40 @@ Hey everybody!
 
 As the title already suggests, we will be talking about testing
 
-*short pause*
+_short pause_
 
 software.
 
 When starting writing software, it is often asked in the SW Community
 
-``Which tool should I use for testing?``
- 
+`Which tool should I use for testing?`
+
 and one gets a long list of names.
 
 I would answer with a question:
 
-``Can you test?``
+`Can you test?`
 
 The reason why I'll be asking this question,
 is that independent on the tool one uses
 if one does not know how to test
-the end result will most probably 
+the end result will most probably
 
-*short pause*
+_short pause_
 
 suck!
 
-This is the reason, why we reconsider out trainings 
+This is the reason, why we reconsider out trainings
 and first start with `how to test`
 and then `how to test using a tool like GoogleTest`.
 
 With no further ado let's see
 
-*next slide*
+_next slide_
 
 `Who Should be here?`
 
 --
-
 
 ## Who Should Be Here?
 
@@ -50,12 +49,12 @@ With no further ado let's see
 
 Note:
 
-You should be here if 
+You should be here if
 
 // emphasize the word 'profession' !
 your _profession_ is SW Engineer
 
-or 
+or
 
 you solve most of your problems with software
 
@@ -66,10 +65,9 @@ you are famous for fixing very fast someone elses software problems
 I think it is important to keep in mind that SW engineering is a _profession_
 and this implies so much more than writing software :D
 
-*next slide*
+_next slide_
 
 --
-
 
 ## How do you develop your software?
 
@@ -77,15 +75,15 @@ Note:
 
 Ok
 
-*short pause*
+_short pause_
 
 now how to _solve everything with software_ ?
 
 well
 
-*short pause*
+_short pause_
 
-*click to show next item on the current slide*
+_click to show next item on the current slide_
 
 this depends on your super powers
 
@@ -96,32 +94,30 @@ On one side we have _normal people_
 
 and on the other side we have _Chuck Norris_ :)
 
-*next slide*
+_next slide_
 
 --
 
 <!-- .slide: data-background-image="images/training_how_to_develop_001.png" data-background-size="cover" -->
 
-
 Note:
 
 Let's see first the _Chuck Norris Style_
 
-``Create``
+`Create`
 
 and
 
-``Deliver``
+`Deliver`
 
 We are sure that if Chuck Norris created something
 it was for a good reason and it will work
 
 This is actually a good core value _TRUST_
 
-*next slide*
+_next slide_
 
 --
-
 
 <!-- .slide: data-background-image="images/training_how_to_develop_002.png" data-background-size="cover" -->
 
@@ -135,7 +131,6 @@ one must insert a new step
 
 `CHECK`
 
-
 I think we all fall in the second category (normal people)
 
 therefore we should focus on two things
@@ -144,11 +139,11 @@ therefore we should focus on two things
 
 and
 
-- how can we optimize this loop 
+- how can we optimize this loop
 
 `Create` -> `Check` -> `Create` -> `Check`
 
-*short pause* (and check the audience)
+_short pause_ (and check the audience)
 
 Hmmm ... I know that some of you think they belong to the first category
 
@@ -156,7 +151,7 @@ Fortunately we can test this now fast!
 
 You know, there are some scientifically proven facts about Chuck Norris
 
-*next slide*
+_next slide_
 
 --
 
@@ -164,9 +159,8 @@ When Chuck Norris code does not compile, <!-- .element: class="monospace" -->
 
 the compiler apologizes. <!-- .element: class="monospace" -->
 
-
 Note:
-*Read the text from the slide*
+_Read the text from the slide_
 
 If your code does not compile
 and the compiler does _not_ apologize to you
@@ -175,7 +169,7 @@ well
 
 _you are NOT Chuck Norris_
 
-*next slide*
+_next slide_
 
 --
 
@@ -185,15 +179,15 @@ he stares down the code until the code confesses all bugs. <!-- .element: class=
 
 Note:
 
-*Read the text from the slide*
+_Read the text from the slide_
 
-If you have to debug your code 
+If you have to debug your code
 
 well
 
 _you are NOT Chuck Norris_
 
-*next slide*
+_next slide_
 
 --
 
@@ -229,9 +223,9 @@ _you are NOT Chuck Norris_
 Note:
 
 Now comes the part were we try not to fall a sleep ... _laugth_
-The next slides are about test design theory. 
+The next slides are about test design theory.
 
-*next slide*
+_next slide_
 
 --
 
@@ -245,12 +239,10 @@ The next slides are about test design theory.
   - <!-- .element: class="fragment" data-fragment-index="6"--> <span class="fragment highlight-blue" data-fragment-index="8">structure based </span>
   - <!-- .element: class="fragment" data-fragment-index="7"--> experience based
 
-
-
 Note:
 
 When it comes to testing techniques or testing methods,
-there are two major categories: 
+there are two major categories:
 
 static and dynamic testing techniques.
 
@@ -274,19 +266,19 @@ where the code will be executed in order to verify its behavior.
 in this category we have
 
 - specification based testing, where we test against the specified
-behavior, against the requirements.
+  behavior, against the requirements.
 
 - structure based testing, where, for example, we want to make sure that
-a certain parts of the code get executed. These are additional tests
-aimed to increase the code coverage.
+  a certain parts of the code get executed. These are additional tests
+  aimed to increase the code coverage.
 
 and then we have
 
-- experience based testing, where we use the things we've learned 
-the hard way over the years and create test cases to make sure 
-they do not happen again.
-These are usually the test cases someone writes when there is not
-enough time to properly design and execute all tests ...
+- experience based testing, where we use the things we've learned
+  the hard way over the years and create test cases to make sure
+  they do not happen again.
+  These are usually the test cases someone writes when there is not
+  enough time to properly design and execute all tests ...
 
 _short pause_
 
@@ -294,7 +286,7 @@ We will focus on only the two underlined topics:
 
 specification based and structure based testing.
 
-*next slide*
+_next slide_
 
 --
 
@@ -312,7 +304,7 @@ Note:
 
 Let's start with the _specification based_ testing techniques.
 
-The list you see is not meant to be complete, 
+The list you see is not meant to be complete,
 but only mentions some techniques in an order
 which we think you will most likely used them
 in practice.
@@ -326,7 +318,6 @@ in one way or another, more or less formal.
 Based on some use cases about how the software shall behave,
 we create test scenarios to make sure the software behaves
 as expected.
-
 
 We then have _boundary value analysis_.
 In this case you focus on how the software behaves when
@@ -360,7 +351,7 @@ In a decision table, one takes a _cause-effect_ approach.
 We define conditions and actions and design tests based on
 which actions shall be triggered if certain conditions are met.
 
-*next slide*
+_next slide_
 
 --
 
@@ -387,14 +378,14 @@ one needs to test both the _if_ and the _else_ execution paths.
 A decision coverage will report the execution paths coverage.
 
 When dealing with complex conditions, having _AND_/_OR_ operators,
-the condition coverage will measure the conditions independent of 
+the condition coverage will measure the conditions independent of
 each other and requires them to be evaluated as both _true_ and _false_.
 
 The compromise to testing all possible combinations in a decision (full test coverage),
 is the MC-DC coverage. MC-DC coverage doe not require those combinations to be tested,
 for which changing the value of one condition element does not affect the condition result.
 
-*next slide*
+_next slide_
 
 --
 
@@ -403,8 +394,8 @@ for which changing the value of one condition element does not affect the condit
 --
 
 ## Black Box
-<!-- .slide: data-background-color="black" -->
 
+<!-- .slide: data-background-color="black" -->
 
 <div class="content-container">
   <div class="big-container">
@@ -432,7 +423,7 @@ the tests to the requirements.
 No one will understand why a test checking that an internal variable _abc_ is not zero,
 is relevant for testing a requirement, without an extra explanation.
 
-*next slide*
+_next slide_
 
 --
 
@@ -464,10 +455,9 @@ does not necessarily mean you can better understand what the SW does.
 
 The Homer Simpson scan is a good picture for this!
 
-*next slide*
+_next slide_
 
 --
-
 
 ## Gray Box
 
@@ -492,10 +482,9 @@ but still consider the software units as black boxes.
 
 The software is now a _gray box_.
 
-*next slide*
+_next slide_
 
 --
-
 
 ## Which 'box' should I use?
 
@@ -506,11 +495,11 @@ Note:
 
 Hmmm... you might ask yourself: "Which box shall I use?"
 
-*click to show next item on the current slide*
+_click to show next item on the current slide_
 
-Well, we should use the black box 
+Well, we should use the black box
 
-*click to show next item on the current slide*
+_click to show next item on the current slide_
 
 and look inside.
 
@@ -519,11 +508,11 @@ One wears the _tester hat_ when writing the tests, to define _what_
 the component shall do and then puts on the _developer hat_ to code
 _how_ the component actually does it.
 
-*next slide*
+_next slide_
 
 --
 
-## How ~~``should``~~ shall I test?
+## How ~~`should`~~ shall I test?
 
 - Don't worry, we have standards! <!-- .element: class="fragment" -->
 
@@ -533,11 +522,11 @@ Having discussed so many design techniques, you might ask yourselves,
 how should you actually test your components?
 Should you apply all test design techniques?
 
-*click to show next item on the current slide*
+_click to show next item on the current slide_
 
 Don't worry, we have standards telling us how we _shall_ test!
 
-*next slide*
+_next slide_
 
 --
 
@@ -553,7 +542,7 @@ also known as _A-SPICE_
 I'm sure we've heard already about this abbreviation,
 the full name is something that only few can remember.
 
-*next slide*
+_next slide_
 
 --
 
@@ -574,7 +563,7 @@ in product development. Since the version three of the standard,
 the _Software Engineering Process_ is no longer included in the
 _System Engineering_ but has a separate life cycle.
 
-*next slide*
+_next slide_
 
 --
 
@@ -582,7 +571,7 @@ _System Engineering_ but has a separate life cycle.
 
 <p class="fragment monospace">A software UNIT is a source file.</p>
 <p class="fragment monospace">Rationale: One can not compile just half a file 🤪</p>
-  
+
 Note:
 
 I've just mention _software unit construction_,
@@ -599,7 +588,7 @@ Why is that?
 Well, a source file is the smallest compilable piece of software.
 One can not compile just half a file 😉
 
-*next slide*
+_next slide_
 
 --
 
@@ -613,7 +602,7 @@ Another important standard is
 _Product development at the software level_,
 also known as ISO 2626262626262 part 6 😀
 
-*next slide*
+_next slide_
 
 --
 
@@ -638,7 +627,7 @@ Very important to keep in mind when reading such table is to have a careful look
 The same number followed by different letters implies that these are alternatives and not that all of
 them are strictly required.
 
-*next slide*
+_next slide_
 
 --
 
@@ -648,7 +637,7 @@ them are strictly required.
 
 Note:
 
-Another table is about 
+Another table is about
 _Methods for deriving test cases for software unit testing_
 
 Here we also see some terms we already discussed and again
@@ -657,7 +646,7 @@ the recommendation based on the safety level.
 If _error guessing_ might sometimes find bugs faster, based on the user
 experience, this should not be the only or the main method for deriving tests 😅
 
-*next slide*
+_next slide_
 
 --
 
@@ -675,7 +664,6 @@ a.k.a. TDD
 
 - write production code
 - deploy
-
 
 --
 
@@ -739,6 +727,7 @@ production code.
     Dude: Yes, please!
     Victim: You have no tests! Does it work? Are you sure?
     Dude: I am pretty! Sure! ... Please hurry, I have release today!
+
 </div>
 
 --
@@ -766,7 +755,7 @@ change your test code.
 
 ## TC != PC
 
-- loc(TC) > k*loc(PC)
+- loc(TC) > k\*loc(PC)
 - k = [5..10]
 
 --
