@@ -1,7 +1,6 @@
-# Yet Another Testing Attempt
+# Yet Another Testing Training
 
-Training materials for embedded software product line engineering and testing.
-
+Training materials for embedded software engineering and testing.
 
 To update the content of the repository:
 

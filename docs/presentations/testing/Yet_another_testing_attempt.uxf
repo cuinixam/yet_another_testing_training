@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>2</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1118</x>
+      <y>388</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+valign=center
+halign=center
+**PROCESS**</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1156</x>
+      <y>396</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Outputs</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1130</x>
+      <y>372</y>
+      <w>14</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=orange</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>1256</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1000</x>
+      <y>1248</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+valign=center
+halign=center
+*Software Component(s)*
+&lt;&lt;PROCESS&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1038</x>
+      <y>1256</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Outputs</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>956</x>
+      <y>1252</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Populate fake
+interfaces
+(stubs)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1058</x>
+      <y>1252</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Verify outputs
+(assertions)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1012</x>
+      <y>1238</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=orange</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>950</x>
+      <y>1236</y>
+      <w>140</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Cases*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>944</x>
+      <y>1146</y>
+      <w>152</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+*Test environment build chain*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>1226</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=cyan</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1000</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Test Runner</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>956</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Fake interfaces
+Generator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1044</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Report Generator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1112</x>
+      <y>260</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+*?*
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1084</x>
+      <y>254</y>
+      <w>98</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Environment*
+
+layer=-1
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>956</x>
+      <y>1246</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[1]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1010</x>
+      <y>1240</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[2]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1058</x>
+      <y>1246</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[3]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>986</x>
+      <y>732</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1006</x>
+      <y>724</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+valign=center
+halign=center
+*PROCESS*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>732</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Outputs</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>962</x>
+      <y>728</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Fake interfaces
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1064</x>
+      <y>728</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Data logger
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1018</x>
+      <y>714</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=orange</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>956</x>
+      <y>712</y>
+      <w>140</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test environment*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1098</x>
+      <y>396</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>988</x>
+      <y>930</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1008</x>
+      <y>922</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+valign=center
+halign=center
+*PROCESS*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1046</x>
+      <y>930</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Outputs</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>964</x>
+      <y>926</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Manipulate fake
+interfaces
+(mocks)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1066</x>
+      <y>926</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Verify outputs
+(assertions)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>912</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=orange</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>958</x>
+      <y>910</y>
+      <w>140</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Case*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>964</x>
+      <y>920</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[1]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1018</x>
+      <y>914</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[2]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1066</x>
+      <y>920</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[3]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1074</x>
+      <y>650</y>
+      <w>60</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>*Reproduce natural environment*
+
+Reproduce the natural environment in the test
+environment:
+- set (fake) inputs
+- trigger the process
+- consume (log data) outputs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1108</x>
+      <y>418</y>
+      <w>60</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>*Process analysis*
+
+Isolate the process from the environment by
+identifing the boudaries and the behaviour.
+
+Define the inputs, the outputs and how to
+trigger the process.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>974</x>
+      <y>188</y>
+      <w>348</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>*Yet another testing attempt*
+lt=.
+fontsize=100
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1068</x>
+      <y>854</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*Define test cases*
+
+Define the behaviour in terms of:
+- preconditions: manipulate the (fake) inputs
+- event: trigger the entity
+- effect: expected outputs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1256</x>
+      <y>718</y>
+      <w>40</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+*PROCESS*
+bg=white
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1184</x>
+      <y>708</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Environment*
+
+layer=-1
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1236</x>
+      <y>724</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1294</x>
+      <y>726</y>
+      <w>28</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-[&gt;]
+</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;100.0;120.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1212</x>
+      <y>720</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Manipulation
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1192</x>
+      <y>724</y>
+      <w>24</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=-[&gt;]
+Inputs</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1318</x>
+      <y>738</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Observer
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1294</x>
+      <y>724</y>
+      <w>28</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=[&gt;]-
+Outputs</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1228</x>
+      <y>926</y>
+      <w>28</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1192</x>
+      <y>926</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Manipulate
+inputs
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1266</x>
+      <y>926</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Verify outputs
+(assertions)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1238</x>
+      <y>914</y>
+      <w>10</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Wait]
+bg=orange</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1186</x>
+      <y>910</y>
+      <w>112</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Case*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1192</x>
+      <y>920</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[1]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1234</x>
+      <y>916</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[2]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1266</x>
+      <y>920</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[3]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1152</x>
+      <y>854</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*Define test cases*
+
+Define the behaviour in terms of:
+- preconditions: manipulate the inputs
+- wait: how much time needs the process to react
+- effect: expected outputs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>950</x>
+      <y>1162</y>
+      <w>140</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Framework*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1192</x>
+      <y>1010</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Manipulate
+inputs
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1266</x>
+      <y>1010</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Verify outputs
+(assertions)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1186</x>
+      <y>994</y>
+      <w>148</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Case*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1192</x>
+      <y>1004</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[1]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1266</x>
+      <y>1004</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[3]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1186</x>
+      <y>968</y>
+      <w>72</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*Define safe state*
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1186</x>
+      <y>974</y>
+      <w>72</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>After executing one test (or sequence of tests) the
+system shall be returned to a safe state to avoid
+that something gets damaged.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1302</x>
+      <y>1010</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Safe state
+valign=center
+halign=center
+bg=orange
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1302</x>
+      <y>1004</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[4]*
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1190</x>
+      <y>1236</y>
+      <w>142</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Cases*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1184</x>
+      <y>1146</y>
+      <w>154</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+*Test environment build chain*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1210</x>
+      <y>1226</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Trigger]
+bg=cyan</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1242</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Test Runner</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1198</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Fake interfaces
+Generator
+fg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1286</x>
+      <y>1172</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Report Generator
+fg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1190</x>
+      <y>1162</y>
+      <w>142</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+halign=left
+*Test Framework*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1198</x>
+      <y>1194</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Test Scheduler</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1286</x>
+      <y>1194</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Data Logger</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1230</x>
+      <y>1252</y>
+      <w>28</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1196</x>
+      <y>1252</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Manipulate
+inputs
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1266</x>
+      <y>1252</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Verify outputs
+(assertions)
+valign=center
+halign=center
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1240</x>
+      <y>1238</y>
+      <w>10</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Wait]
+bg=orange</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1196</x>
+      <y>1246</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[1]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1236</x>
+      <y>1240</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[2]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1266</x>
+      <y>1246</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[3]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>1252</y>
+      <w>26</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>Safe state
+valign=center
+halign=center
+bg=orange
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1300</x>
+      <y>1246</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[4]*
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1190</x>
+      <y>1286</y>
+      <w>142</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+*PROCESS*
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1228</x>
+      <y>1010</y>
+      <w>28</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1238</x>
+      <y>998</y>
+      <w>10</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-[Wait]
+bg=orange</panel_attributes>
+    <additional_attributes>20.0;10.0;20.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1234</x>
+      <y>1000</y>
+      <w>8</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>*[2]*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>142</y>
+      <w>184</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;900.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>678</y>
+      <w>52</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;130.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1178</x>
+      <y>676</y>
+      <w>56</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>260.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1034</x>
+      <y>880</y>
+      <w>52</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;130.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1186</x>
+      <y>880</y>
+      <w>52</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>240.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>1128</x>
+      <y>528</y>
+      <w>12</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1134</x>
+      <y>516</y>
+      <w>28</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>How to test
+this process?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>524</y>
+      <w>8</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1154</x>
+      <y>650</y>
+      <w>60</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>*Manipulate natural environment*
+
+Manipulate the natural environment to check
+the process's behaviour:
+*- manipulate real inputs*
+- wait for the process to react
+- verify outputs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1242</x>
+      <y>514</y>
+      <w>20</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>What?
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1242</x>
+      <y>524</y>
+      <w>20</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>Why?
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1242</x>
+      <y>534</y>
+      <w>20</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>How?
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1242</x>
+      <y>544</y>
+      <w>20</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>Really?
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1262</x>
+      <y>516</y>
+      <w>12</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1272</x>
+      <y>526</y>
+      <w>22</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>Use cases
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1262</x>
+      <y>526</y>
+      <w>12</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1262</x>
+      <y>536</y>
+      <w>12</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1262</x>
+      <y>546</y>
+      <w>12</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1272</x>
+      <y>536</y>
+      <w>22</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>Implementation
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1272</x>
+      <y>546</y>
+      <w>22</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>Test cases
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1272</x>
+      <y>516</y>
+      <w>44</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>Requirements and architecture
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>956</x>
+      <y>1194</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Test Scheduler
+fg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1044</x>
+      <y>1194</y>
+      <w>38</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>//symbol=component
+valign=center
+halign=center
+Data Logger
+fg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>1394</y>
+      <w>184</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;900.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1468</x>
+      <y>1318</y>
+      <w>6</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;360.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>1316</y>
+      <w>6</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;360.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

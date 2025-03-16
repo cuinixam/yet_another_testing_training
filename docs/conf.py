@@ -1,4 +1,4 @@
-project = "Yet Another Testing Attempt"
+project = "Yet Another Testing Training"
 copyright = "2025, Alexandru Maxiniuc"
 author = "Alexandru Maxiniuc"
 
@@ -23,7 +23,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "presentations"]
 # Configure HTML output
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/logo.png"
-html_title = "Yet Another Testing Attempt"
+html_title = "Yet Another Testing Training"
 html_sidebars = {
     "**": ["sidebar-nav-bs"],
 }
@@ -39,7 +39,4 @@ html_theme_options = {
 }
 html_last_updated_fmt = ""
 html_static_path = ["_static"]
-
-
-def setup(app):
-    app.add_css_file("custom.css")
+html_extra_path = ["presentations"]

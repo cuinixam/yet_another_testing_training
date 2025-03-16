@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "jarvis"
 version = "0.0.0"
-description = "Yet another testing attempt."
+description = "Yet another testing training."
 authors = ["Alexandru Maxiniuc <me@maxiniuc.com>"]
 
 [tool.poetry.dependencies]
