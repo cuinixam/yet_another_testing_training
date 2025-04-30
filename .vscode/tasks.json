@@ -3,7 +3,19 @@
   "tasks": [
     {
       "label": "install dependencies",
-      "command": "./build.ps1 -install",
+      "command": "pypeline run --step CreateVEnv",
+      "type": "shell",
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "run tests",
+      "command": "pypeline run --step PyTest",
       "type": "shell",
       "presentation": {
         "reveal": "always"
@@ -15,7 +27,7 @@
     },
     {
       "label": "generate docs",
-      "command": ".venv/Scripts/poetry run sphinx-build -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
+      "command": "pypeline run --step BuildDocs --single",
       "type": "shell",
       "presentation": {
         "reveal": "always"
@@ -27,7 +39,7 @@
     },
     {
       "label": "autobuild docs",
-      "command": ".venv/Scripts/poetry run sphinx-autobuild -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
+      "command": "sphinx-autobuild -E -a ${workspaceFolder}/docs ${workspaceFolder}/build/docs",
       "type": "shell",
       "presentation": {
         "reveal": "always"
@@ -40,18 +52,6 @@
     {
       "label": "open docs index.html",
       "command": "${workspaceFolder}/build/docs/index.html",
-      "type": "shell",
-      "presentation": {
-        "reveal": "always"
-      },
-      "group": {
-        "kind": "build",
-        "isDefault": false
-      }
-    },
-    {
-      "label": "run pre-commit checks",
-      "command": ".venv/Scripts/poetry run pre-commit run --all-files",
       "type": "shell",
       "presentation": {
         "reveal": "always"
