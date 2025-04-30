@@ -546,15 +546,7 @@ _next slide_
 
 --
 
-## A.SPICE
-
-<!-- .slide: data-background-color="white" -->
-
-![A.SPICE](images/training_aspice_all.png)
-
-<div class="bottom-aligned-text">
-<a href="http://www.freepik.com">Designed by macrovector / Freepik</a> <!-- .element: class="highlighted-yellow-transparent-background-small" -->
-</div>
+<!-- .slide: data-background-image="images/training_aspice_swe.png" -->
 
 Note:
 
@@ -564,6 +556,10 @@ the _Software Engineering Process_ is no longer included in the
 _System Engineering_ but has a separate life cycle.
 
 _next slide_
+
+--
+
+<!-- .slide: data-background-image="images/training_aspice_swe_traces.png" -->
 
 --
 
@@ -749,7 +745,7 @@ If you are changing the production code
 remains the same, you should not have to
 change your test code.
 
-**TIP:** Pair your tests with behaviors.
+💡 Pair your tests with behaviors.
 
 --
 
@@ -760,7 +756,7 @@ change your test code.
 
 --
 
-## Software quality KPIs!
+## Software quality KPIs! 🤥
 
 - Number of tests
 - Code Coverage
@@ -772,7 +768,7 @@ using just one test with one single assert
 
 --
 
-## SW Quality Characteristics
+## SW Quality Characteristics 😍
 
 - <!-- .element: class="fragment grow"--> Functionality
 - <!-- .element: class="fragment grow"--> Maintainability
@@ -791,11 +787,11 @@ It is hard to test poorly designed legacy code. <!-- .element: class="fragment" 
 
 ## Let's practice! 🏋️‍♂️
 
-See the training material for the first exercise.
-
 <!-- .slide: data-background-color="green" -->
 
---
+See the training material for the next exercise.
+
+---
 
 ## Thank you!
 
