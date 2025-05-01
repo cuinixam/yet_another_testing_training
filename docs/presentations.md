@@ -8,7 +8,7 @@
 
 ````{grid-item-card} Yet Another Presentation About Testing
 :text-align: justify
-:link: testing/presentation.html
+:link: testing/index.html
 
 Testing embedded software applications, how, when, and why.
 ````

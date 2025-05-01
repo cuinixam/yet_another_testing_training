@@ -1,4 +1,4 @@
-## Yet Another Presentation About Testing
+# Yet Another Presentation About Testing
 
 Note:
 
@@ -201,7 +201,7 @@ _next slide_
 - design your tests <!-- .element: class="fragment monospace" -->
 - run your tests and check the results <!-- .element: class="fragment monospace" -->
 
---
+---
 
 ## Testing Environment
 
@@ -209,14 +209,14 @@ _next slide_
 
 --
 
-## Types of Code
+### Types of Code
 
 - Production Code (PC) <!-- .element: class="fragment monospace" -->
 - Test Code (TC) <!-- .element: class="fragment monospace" -->
 - Mockup Code (MC) <!-- .element: class="fragment monospace" -->
 - Framework Code (FC) <!-- .element: class="fragment monospace" -->
 
---
+---
 
 ## Test Design (Theory)
 
@@ -229,7 +229,7 @@ _next slide_
 
 --
 
-## Testing Techniques
+### Testing Techniques
 
 - <!-- .element: class="fragment" data-fragment-index="1"--> Static
   - <!-- .element: class="fragment" data-fragment-index="3"--> static code analysis (CPPCheck, Polyspace)
@@ -290,7 +290,7 @@ _next slide_
 
 --
 
-## Dynamic Testing Techniques
+### Dynamic Testing Techniques
 
 Specification based
 
@@ -355,7 +355,7 @@ _next slide_
 
 --
 
-## Dynamic Testing Techniques
+### Dynamic Testing Techniques
 
 Structure based
 
@@ -389,7 +389,7 @@ _next slide_
 
 --
 
-## Testing Perspectives 📦
+### Testing Perspectives 📦
 
 --
 
@@ -427,7 +427,7 @@ _next slide_
 
 --
 
-## White Box
+### White Box
 
 <!-- .slide: data-background-color="white" -->
 
@@ -459,7 +459,7 @@ _next slide_
 
 --
 
-## Gray Box
+### Gray Box
 
 <!-- .slide: data-background-color="gray" -->
 
@@ -486,7 +486,7 @@ _next slide_
 
 --
 
-## Which 'box' should I use?
+### Which 'box' should I use?
 
 - Use the black box ... <!-- .element: class="fragment" -->
 - and look inside 😉 <!-- .element: class="fragment" -->
@@ -510,7 +510,7 @@ _how_ the component actually does it.
 
 _next slide_
 
---
+---
 
 ## How ~~`should`~~ shall I test?
 
@@ -530,7 +530,7 @@ _next slide_
 
 --
 
-## Automotive Software Process Improvement and Capability Determination
+### Automotive Software Process Improvement and Capability Determination
 
 a.k.a. A.SPICE
 
@@ -563,7 +563,7 @@ _next slide_
 
 --
 
-## What is a Software Unit?
+### What is a Software Unit?
 
 <p class="fragment monospace">A software UNIT is a source file.</p>
 <p class="fragment monospace">Rationale: One can not compile just half a file 🤪</p>
@@ -588,7 +588,7 @@ _next slide_
 
 --
 
-## ISO 26262-6 Product development at the software level
+### ISO 26262-6 Product development at the software level
 
 a.k.a. ISO 26262-6
 
@@ -602,7 +602,7 @@ _next slide_
 
 --
 
-## ISO 26262-6 - test methods
+### ISO 26262-6 - test methods
 
 ![ISO 26262-6 Test Methods](images/training_iso_26262_6_test_methods.png)
 
@@ -627,7 +627,7 @@ _next slide_
 
 --
 
-## ISO 26262-6 - derive tests
+### ISO 26262-6 - derive tests
 
 ![ISO 26262-6 Derive Tests](images/training_iso_26262_6_derive_tests.png)
 
@@ -644,7 +644,7 @@ experience, this should not be the only or the main method for deriving tests �
 
 _next slide_
 
---
+---
 
 ## Test Driven Development
 
@@ -652,7 +652,7 @@ a.k.a. TDD
 
 --
 
-## Chuck Norris Style
+### Chuck Norris Style
 
 <!-- .slide: data-background-color="white" -->
 
@@ -663,7 +663,7 @@ a.k.a. TDD
 
 --
 
-## Extreme Confident Style
+### Extreme Confident Style
 
 - fix (critical) bugs fast
 - deploy
@@ -680,7 +680,7 @@ Think: Chuck Norris never has vacation and never sleeps
 
 --
 
-## TDD Style
+### TDD Style
 
 <ul>
 <li class="fragment" style="color:red">write a failing test</li>
@@ -691,7 +691,7 @@ Think: Chuck Norris never has vacation and never sleeps
 
 --
 
-## TDD Advantages (I)
+### TDD Advantages (I)
 
 - everything is tested (deploy with confidence)
 - fewer bugs (less rework time)
@@ -709,7 +709,7 @@ production code.
 
 --
 
-## TDD Advantages (II)
+### TDD Advantages (II)
 
 - sleep better
 - have happier colleagues
@@ -728,7 +728,7 @@ production code.
 
 --
 
-## TDD Concerns
+### TDD Concerns
 
 - write code that you will delete <!-- .element: class="fragment" -->
 - write too much test code <!-- .element: class="fragment" -->
@@ -736,7 +736,7 @@ production code.
 - tend to generate high test coupling <!-- .element: class="fragment" -->
   - slow down refactoring <!-- .element: class="fragment" -->
 
---
+---
 
 ## Test coupling
 
@@ -747,14 +747,14 @@ change your test code.
 
 💡 Pair your tests with behaviors.
 
---
+---
 
 ## TC != PC
 
-- loc(TC) > k\*loc(PC)
-- k = [5..10]
+loc(TC) > loc(PC)
 
---
+
+---
 
 ## Software quality KPIs! 🤥
 
@@ -766,7 +766,7 @@ Note:
 It is very easy to get 100% MC/DC coverage,
 using just one test with one single assert
 
---
+---
 
 ## SW Quality Characteristics 😍
 
@@ -777,13 +777,105 @@ using just one test with one single assert
 - <!-- .element: class="fragment grow"--> Reliability
 - <!-- .element: class="fragment grow"--> Usability
 
+---
+
+## Embedded Software (Testing)
+
 --
+
+## Why is Embedded Software Special?
+
+--
+
+## Constraints
+
+- Timing is critical <!-- .element: class="fragment" -->
+- Limited CPU Power <!-- .element: class="fragment" -->
+- Limited Memory (RAM/ROM) <!-- .element: class="fragment" -->
+- Power Consumption <!-- .element: class="fragment" -->
+
+--
+
+## Direct Hardware Interaction
+
+- Talking to peripherals (I2C, SPI, GPIOs) <!-- .element: class="fragment" -->
+- Reading sensors, controlling actuators <!-- .element: class="fragment" -->
+
+--
+
+## The Physical World
+
+- Messy, unpredictable environment <!-- .element: class="fragment" -->
+- Dealing with noise and interferences <!-- .element: class="fragment" -->
+
+---
+
+## Embedded Engineer 👩‍💻
+
+--
+
+### Talk to the Hardware Colleagues
+
+--
+
+<!-- .slide: data-background-image="images/training_schematic_esp32_ethernet_board.png" data-background-size="contain" -->
+
+--
+
+### Memory Layout
+
+<img src="images/memory_layout.svg">
+
+--
+
+### Know your Compiler Toolchain
+
+--
+
+<div class="mermaid">
+  <pre>
+  flowchart LR
+      A(🤓
+      C/C++) --> B[🪚 Preprocessor]
+      B --> C[⚙️ Compiler]
+      C --> D[🪠 Assembler]
+      D --> E[🔗 Linker]
+      E --> F(📟
+      101101)
+  </pre>
+</div>
+
+--
+
+## Demo! 📽️
+
+<!-- .slide: data-background-color="green" -->
+
+Modern compilers are smarter than you think!
+
+--
+
+`volatile`
+
+--
+
+`inline`
+
+--
+
+`static`
+
+--
+
+`__attribute__((section(".my_section")))`
+
+---
 
 ## Spoiler alert ☣️
 
 It is hard to test poorly designed legacy code. <!-- .element: class="fragment" -->
 
---
+---
 
 ## Let's practice! 🏋️‍♂️
 
