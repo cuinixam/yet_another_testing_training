@@ -753,7 +753,6 @@ change your test code.
 
 loc(TC) > loc(PC)
 
-
 ---
 
 ## Software quality KPIs! 🤥
